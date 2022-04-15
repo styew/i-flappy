@@ -1,6 +1,5 @@
 import pygame
 from pygame.locals import *
-import passaro
 class Main():
     #resolução
     largura = 800
