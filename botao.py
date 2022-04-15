@@ -25,7 +25,7 @@ mainClock = pygame.time.Clock()
 guia_fonte =  pygame.font.SysFont("ariel",30)
 
 #botão menu
-botao1 = Button("Iniciar",100,40,(largura/1.2,altura/2)) # texto, largura , altura, posição
-botao2 = Button("setting", 100,40,(largura/1.2,400))
-botao3 = Button("Sair",100,40,(largura/1.2,500))
+botao1 = Button("Iniciar",100,40,(150,500)) # texto, largura , altura, posição
+botao2 = Button("setting", 100,40,(350,500))
+botao3 = Button("Sair",100,40,(550,500))
 credito = Button(" Este prototico esta sendo desenvolvido por : Stephan Schrtoer e Lucas texeira",800,20,(0,580))
