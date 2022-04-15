@@ -1,44 +1,44 @@
 import pygame
+from pygame.locals import *
+import passaro
+class Main():
+    #resolução
+    largura = 800
+    altura = 600
 
-class Menu():
-    def __init__(self,text,largura,altura,posicao):
-        #top retangulo
-        self.top_rect = pygame.Rect(posicao,(largura,altura))
-        self.top_color = "#475F77"
-        
-        #texto
-        self.text_surf = guia_fonte.render(text,True,"#ffffff")
-        self.text_rect = self.text_surf.get_rect(center = self.top_rect.center)
+    #tela e icone
+    tela = pygame.display.set_mode([largura, altura])
+    icone = pygame.image.load('img/bird.png')
+    pygame.display.set_caption('i-Flappy')
+    pygame.display.set_icon(icone)    
+    
 
-    def pintar(self):
-        pygame.draw.rect(tela,self.top_color,self.top_rect)
-        tela.blit(self.text_surf,self.text_rect)
+    # Bird
+playerImg = pygame.image.load('img/frame-1.png')
+playerX = 300
+playerY = 100
 
-#resolução
-largura = 800
-altura = 600
 
-#tela
-tela = pygame.display.set_mode([largura, altura])
-pygame.display.set_caption('Button Demo')
+# coloca logo na tela
+def menu_bird():
+    Main.tela.blit(playerImg, (playerX, playerY))
 
 #informações para rodar
 rodar = True
 pygame.init()
 guia_fonte =  pygame.font.SysFont("ariel",30)
-botao1 = Menu("teste",200,40,(300,200))
 
+
+#evento de interação a tela
 while rodar:
+    Main.tela.fill([0, 8, 20])
     
-
-    
-    #evento de interação a tela
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             rodar = False 
-            
-    tela.fill([40,175, 235])
-    botao1.pintar()
+    
+    menu_bird()
     pygame.display.update()
+    
     
 pygame.quit()
