@@ -15,8 +15,8 @@ class Menu():
         tela.blit(self.text_surf,self.text_rect)
 
 #resolução
-largura = 800
-altura = 600
+largura = 600
+altura = 800
 
 #tela
 tela = pygame.display.set_mode([largura, altura])
@@ -37,7 +37,7 @@ while rodar:
         if event.type == pygame.QUIT:
             rodar = False 
             
-    tela.fill([40,175, 235])
+    tela.fill([30,173, 235])
     botao1.pintar()
     pygame.display.update()
     
