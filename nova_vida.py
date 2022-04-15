@@ -37,7 +37,7 @@ while rodar:
         if event.type == pygame.QUIT:
             rodar = False 
             
-    tela.fill([30,173, 235])
+    tela.fill([200,85, 235])
     botao1.pintar()
     pygame.display.update()
     
