@@ -1,6 +1,6 @@
 import pygame
 from pygame.locals import *
-import passaro
+from botao import Button
 class Main():
     #resolução
     largura = 800
@@ -18,6 +18,9 @@ playerImg = pygame.image.load('img/frame-1.png')
 playerX = 300
 playerY = 100
 
+#resolução
+largura = 600
+altura = 800
 
 # coloca logo na tela
 def menu_bird():
@@ -38,6 +41,7 @@ while rodar:
             rodar = False 
     
     menu_bird()
+    Button.pintar(Button)
     pygame.display.update()
     
     
