@@ -15,8 +15,8 @@ class Menu():
         tela.blit(self.text_surf,self.text_rect)
 
 #resolução
-largura = 600
-altura = 800
+largura = 800
+altura = 600
 
 #tela
 tela = pygame.display.set_mode([largura, altura])
