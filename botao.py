@@ -38,3 +38,6 @@ botao2 = Button("setting", 100,40,(350,500),Blue_black,Yellow)
 botao3 = Button("Sair",100,40,(550,500),Blue_black,Yellow)
 credito = Button(" Este prototico esta sendo desenvolvido por : Stephan Schrtoer e Lucas texeira",800,20,(0,580),White,Blue)
 
+#Informaçoes do cursos
+clicar = False
+
