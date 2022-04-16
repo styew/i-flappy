@@ -1,5 +1,5 @@
 import pygame
-
+import moviepy.editor
 
 class Button():
     def __init__(self,text,largura,altura,posicao,color1,color2):
@@ -14,6 +14,8 @@ class Button():
     def pintar(self):
         pygame.draw.rect(tela,self.top_color,self.top_rect)
         tela.blit(self.text_surf,self.text_rect)
+
+    
             
 #informações de inicializacao
 largura = 800
@@ -32,6 +34,7 @@ Yellow = "#FFC300"
 White_yello2 = "#FFD60A"
 White = "#fffdf7"
 
+
 #botão menu
 botao1 = Button("Iniciar",100,40,(150,500),Blue_black,Yellow) # texto, largura , altura, posição , cor_rect, cor_text
 botao2 = Button("setting", 100,40,(350,500),Blue_black,Yellow)
@@ -40,4 +43,3 @@ credito = Button(" Este prototico esta sendo desenvolvido por : Stephan Schrtoer
 
 #Informaçoes do cursos
 clicar = False
-

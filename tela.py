@@ -1,6 +1,9 @@
 import pygame
+import moviepy.editor
 from pygame.locals import *
 from botao import*
+
+
 
 while True:
     
