@@ -1,9 +1,12 @@
 import pygame
-import moviepy.editor
 from pygame.locals import *
-from botao import*
+from date_botao import*
+from class_passaro import *
 
+#titulo & icone 
 
+pygame.display.set_caption("I-Flappy")
+pygame.display.set_icon(icone)
 
 while True:
     
@@ -32,13 +35,14 @@ while True:
             
 
     #desenhando na tela        
-    tela.fill([30,173, 235])    
+    tela.fill(Dark_blue)    
     botao1.pintar()
     botao2.pintar()
     botao3.pintar()    
     botao1 = Button("Iniciar",100,40,(150,500),Blue_black,Yellow)
     botao2 = Button("opçoes", 100,40,(350,500),Blue_black,Yellow)
     botao3 = Button("Sair",100,40,(550,500),Blue_black,Yellow)
-    credito.pintar()       
+    credito.pintar()      
+    Player_() 
     pygame.display.update()
     mainClock.tick(60)
