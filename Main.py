@@ -2,12 +2,12 @@ import pygame
 from pygame.locals import *
 from date_botao import*
 from class_passaro import *
+from class_backgroun import *
 
 #titulo & icone 
 
 pygame.display.set_caption("I-Flappy")
 pygame.display.set_icon(icone)
-
 while True:
     
     #evento de interação a tela
@@ -34,8 +34,8 @@ while True:
     clicar = False
             
 
-    #desenhando na tela        
-    tela.fill(Dark_blue)    
+    #desenhando na tela
+    Fundo_()
     botao1.pintar()
     botao2.pintar()
     botao3.pintar()    
@@ -43,6 +43,6 @@ while True:
     botao2 = Button("opçoes", 100,40,(350,500),Blue_black,Yellow)
     botao3 = Button("Sair",100,40,(550,500),Blue_black,Yellow)
     credito.pintar()      
-    Player_() 
+    Player_()
     pygame.display.update()
     mainClock.tick(60)
