@@ -26,7 +26,7 @@ mainClock = pygame.time.Clock()
 guia_fonte =  pygame.font.SysFont("ariel",30)
 
 #cores 
-Black = "#000814"
+Dark_blue = "#000814"
 Blue_black = "#001D3D"
 Blue = "#003566"
 Yellow = "#FFC300"
