@@ -1,5 +1,4 @@
 import pygame
-import moviepy.editor
 
 class Button():
     def __init__(self,text,largura,altura,posicao,color1,color2):

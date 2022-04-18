@@ -1,7 +1,6 @@
 import pygame
-import moviepy.editor
 from pygame.locals import *
-from botao import*
+from date_botao import*
 
 
 
