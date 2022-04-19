@@ -30,7 +30,7 @@ def game_():
                 pygame.quit()
             elif event.type == pygame.KEYUP:
                 subir = True
-                print("step 1")
+                #print("step 1")
                 yf = y - 120
 
         if subir == True:
@@ -41,10 +41,10 @@ def game_():
             subir = False ; contador = 0
         if subir == False:
             y += 7
-            print("step2")
+            #print("step2")
             tela.fill(White)
         plot_personagem((x,y))
-        print("y",y,"yf",yf) 
+        #print("y",y,"yf",yf) 
         pygame.display.update()
         frame.tick(60)
     print("Erro")

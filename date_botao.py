@@ -42,3 +42,6 @@ credito = Button(" Este prototico esta sendo desenvolvido por : Stephan Schrtoer
 
 #Informaçoes do cursos
 clicar = False
+
+#informações do jogo
+running = True

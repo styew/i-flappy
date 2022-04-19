@@ -27,6 +27,7 @@ while True:
     if clicar == True and botao1.top_rect.collidepoint(pygame.mouse.get_pos()):
         print("o jogo irá iniciar")
         running = True
+        game_()
     if clicar == True and botao2.top_rect.collidepoint(pygame.mouse.get_pos()):
         print("opçoes do jogo")
     if clicar == True and botao3.top_rect.collidepoint(pygame.mouse.get_pos()):
