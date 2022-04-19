@@ -10,20 +10,21 @@ tela = pygame.display.set_mode((largura, altura))
 
 roda = True
 
-fundo_tela = pygame.image.load('img/background_game.png').convert()
-fundo_tela_largura = fundo_tela.get_width()
-rolagem = 0
-tile = math.ceil(largura/fundo_tela_largura) + 1
+fundo_tela = pygame.image.load('img/back.png')
 
 
+x = 0
 while roda:
     clock.tick(60)
     
-    
-    
+    x -= 5
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             roda = False
-
+    tela.blit(fundo_tela,(x,0))
+    if x == -800:
+        x = 0
+    print("contandor")
     pygame.display.update()
+    clock.tick(60)
 pygame.quit()

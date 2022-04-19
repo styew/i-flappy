@@ -1,3 +1,4 @@
+from genericpath import exists
 import pygame
 from pygame.locals import *
 from date_botao import *
@@ -28,9 +29,10 @@ def game_():
     tela.fill(White)
     x=300
     y=200 ; yf = y ; contador = 0
-    subir = False
+    subir = False ; xx=0
     while running:
-        
+        fundo_game(xx)
+        print("valor saida",xx)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -41,23 +43,32 @@ def game_():
 
         if subir == True:
             y -= 12
-            tela.fill(White)
+            fundo_game(xx)
             contador += 1
         if contador == 10:
             subir = False ; contador = 0
         if subir == False:
             y += 7
             print("step2")
-            tela.fill(White)
+            fundo_game(xx)
         plot_personagem((x,y))
-        print("y",y,"yf",yf) 
+        xx -= 10
+        if xx == -800:
+            xx = 0
+        #print("y",y,"yf",yf) 
         pygame.display.update()
         frame.tick(60)
     print("Erro")
+
    
+def fundo_game(x):
+    tela = pygame.display.set_mode((largura, altura))
+    fundo_tela = pygame.image.load('img/back.png') 
+    tela.blit(fundo_tela,(x,0))
+        
 
 
 
 
-
+game_()
         
