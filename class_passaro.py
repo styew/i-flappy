@@ -46,7 +46,7 @@ def game_():
         plot_personagem((x,y))
         #print("y",y,"yf",yf) 
         pygame.display.update()
-        frame.tick(60)
+        frame.tick(160)
     print("Erro")
    
 

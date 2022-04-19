@@ -70,5 +70,3 @@ def fundo_game(x):
 
 
 
-game_()
-        
